@@ -1,0 +1,82 @@
+version: '3'
+
+services:
+  mnist_cnn_1:
+    build: .
+    container_name: mnist_cnn_1
+    command: python cnn.py
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: '2G'
+
+  mnist_cnn_2:
+    build: .
+    container_name: mnist_cnn_2
+    command: python cnn.py
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: '2G'
+
+  mnist_cnn_3:
+    build: .
+    container_name: mnist_cnn_3
+    command: python cnn.py
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: '2G'
+
+  mnist_cnn_4:
+    build: .
+    container_name: mnist_cnn_4
+    command: python cnn.py
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: '2G'
+
+  mnist_cnn_5:
+    build: .
+    container_name: mnist_cnn_5
+    command: python cnn.py
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: '2G'
+
+  mnist_cnn_6:
+    build: .
+    container_name: mnist_cnn_6
+    command: python cnn.py
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: '2G'
+
+  mnist_cnn_7:
+    build: .
+    container_name: mnist_cnn_7
+    command: python cnn.py
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: '2G'
+
+  mnist_cnn_8:
+    build: .
+    container_name: mnist_cnn_8
+    command: python cnn.py
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: '2G'
