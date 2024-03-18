@@ -1,9 +1,11 @@
 import mnist
+import time
 import numpy as np
 from conv import Conv3x3
 from maxpool import MaxPool2
 from softmax import Softmax
 
+start = time.time()
 # We only use the first 1k examples of each set in the interest of time.
 # Feel free to change this if you want.
 train_images = mnist.train_images()[:1000]
@@ -95,3 +97,6 @@ for im, label in zip(test_images, test_labels):
 num_tests = len(test_images)
 print('Test Loss:', loss / num_tests)
 print('Test Accuracy:', num_correct / num_tests)
+end = time.time()
+length_time = end - start
+print('Computation Time: ', length_time)
